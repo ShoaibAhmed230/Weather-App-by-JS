@@ -1,0 +1,117 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 300px;
+    margin: auto;
+    height: 100vh;
+}
+.layer{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    opacity: .5;
+    background: #0c0a0a;
+}
+.content{
+    z-index: 1;
+}
+form{
+    display: flex;
+    align-items: center;
+}
+input{
+background: transparent;
+border: 1px solid #000;
+}
+input:focus{
+    outline: #000;
+}
+input::placeholder{
+    color: #1a1919;
+    font-size: 10px;
+}
+#getWeatherResult{
+    background: transparent;
+    border: none;
+}
+#getWeatherResult svg{
+    height: 25px;
+    cursor: pointer;
+}
+
+#temp-div{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+}
+#weather-result{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    text-transform: capitalize;
+
+}
+#description-div{
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+
+#cloud-svg{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    display: none;
+    margin: 20px 0px;
+}
+#sunny-svg{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    display: none;
+    margin: 20px 0px;
+}
+#cloud-sunny-svg{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    display: none;
+    margin: 20px 0px;
+}
+
+
+
+
+
+
+
+
+#video-container {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+  
